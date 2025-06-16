@@ -7,6 +7,9 @@
 body{
     background-color:  rgb(6, 6, 40); ;
 }
+#wrapper{
+    padding: 15px;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -16,11 +19,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
 }
 .logo{
     color: rgb(66, 77, 228);
     font-size: 14px;
+}
+.bar{
+    color: white;
+    display: none;
 }
 .menu{
     display: flex;
@@ -42,17 +48,16 @@ ul li{
     background-color: rgb(66, 77, 228);
     padding: 8px;
     font-size: 14px;
-      border-radius: 10px;
+    border-radius: 5px;
 }
 .top-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
     margin-top: 15px;
 }
 .left{
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -65,6 +70,7 @@ ul li{
 .left p{
     color: white;
     font-size: 14px;
+    line-height: 20px;
 }
 .left span{
     color: rgb(66, 77, 228);
@@ -74,21 +80,22 @@ ul li{
     background-color: rgb(66, 77, 228);
     padding: 10px;
     font-size: 14px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .right{
     width: 50%;
-    /* padding: 40px; */
+    height: 350px;
+    padding: 50px 40px 40px 0;
 }
 .right img{
     width: 100%;
-    height: 350px;
+    height:100%;
+    border-radius: 5px;
 
 }
 .middle-container{
     margin-top: 60px;
-    padding: 15px;
 }
 .middle-container h3{
     color: white;
@@ -102,17 +109,19 @@ ul li{
     justify-content: space-between;
 }
 .box{
-    width: 32%;
-    background-color: rgb(58, 58, 103);
+    /* width: 32%; */
+    background-color: rgb(36, 36, 46);;
     color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap: 10px;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
+}
+.box:nth-child(2){
+     margin: 0 25px;
 }
 .box span{
     font-size: 28px;
@@ -121,10 +130,10 @@ ul li{
 .box p{
     font-size: 12px;
     padding: 5px;
+    line-height: 16px;
 }
 .last-container{
  margin-top: 60px;
-    padding: 15px;
 }
 .last-container h3{
     color: white;
@@ -132,28 +141,42 @@ ul li{
     font-size: 24px;
     padding: 20px;
 }
-.img{
+.product-box{
+    width: 100%;
+    background-color: rgb(36, 36, 46);
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 5px;
+ 
+}
+.product-box:nth-child(2){
+    margin: 0 25px;
+}
+.product-img{
     width: 100%;
     height: 200px;
+    margin-bottom: 2px;
+    
 }
-.box img{
+.product-img img{
     width: 100%;
     height: 100%;
+    border-radius: 5px;
     object-fit: cover;
 }
-.box-edit{
-    text-align: left;
-    gap:8 px;
-}
 .buynow{
+    margin-top: 2px;
     background-color:rgb(66, 77, 228) ;
+    border-radius: 5px;
     text-align: center;
     padding: 8px;
     width: 100%;
 }
 .form{
     margin-top: 60px;
-    padding: 15px;
 }
 .form h3{
     color: white;
@@ -169,17 +192,18 @@ ul li{
 
 }
 form{
+     width: 500px;
     color: white;
     display: flex;
     /* align-items: center; */
     flex-direction: column;
     text-align: left;
-    width: 400px;
-    background-color: rgb(58, 58, 103);
+    background-color: rgb(36, 36, 46);;
     padding: 20px;
 }
 .send{
     background-color:rgb(66, 77, 228) ;
+    border-radius: 5px;
     text-align: center;
     padding: 8px;
     width: 100%;
